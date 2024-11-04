@@ -9,5 +9,7 @@ Note: There are trailing spaces at the end of output.
 '''
 s1 = set(map(int,input().split()))
 s2 = set(map(int,input().split()))
-print(s1-s2)
+for i in s1:
+  if i not in s2:
+    print(i,end= " ")
 
