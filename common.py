@@ -8,4 +8,6 @@ Note: Trailing spaces are there at the end of the output.
 '''
 s1 = set(map(int,input().split()))
 s2 = set(map(int,input().split()))
-print(
+for i in s1:
+  if i in s2:
+    print(i,end=" ")
