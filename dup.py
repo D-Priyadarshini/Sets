@@ -14,6 +14,16 @@ Duplicate Values: 3
 1 2 3 
 '''
 n = int(input())
-
+s = set()
+count = 0
+l = []
 for i in range(n):
-  if 
+    s1 = int(input())
+    if s1 not in s:
+        s.add(s1)
+        l+=[s1]
+    else:
+        count += 1
+print("Duplicate Values:",count)
+print(*l)
+
